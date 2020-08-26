@@ -24,6 +24,7 @@ This repository is privately owned by me. Don't expect any official support for 
 ```
 git clone https://github.com/Mentos05/SAS_Viya_GPU.git
 ```
+2. Copy your license file into the repository folder (usually named: SAS_Viya_deployment_data.zip)
 2. Go into the repository folder and run docker build command<br>
 ```
 cd SAS_Viya_GPU
@@ -43,13 +44,13 @@ Open one of the following URLs in your browser:
 
 Use the following credentials:<br>
 Username = sas<br>
-Password = Orion123
+Password = saspw
 
 ### Whats next?
 Connect to your container, e.g. via [SAS SWAT](https://github.com/sassoftware/python-swat).
 ```
 from swat import *
-s = CAS('localhost', 5570, 'sas', 'Orion123')
+s = CAS('localhost', 5570, 'sas', 'saspw')
 ```
 
 ### Jupyter Lab (Python Environment)
