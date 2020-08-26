@@ -3,7 +3,9 @@
 This repository provides build instructions to create your own SAS Viya Programmling Only Docker Container with GPU acceleration.
 
 ### Overview
-There is an official GitHub repository from SAS for Docker containers. [SAS® Viya® Container Recipes](https://github.com/sassoftware/sas-container-recipes)
+There is an official GitHub repository from SAS for Docker containers that you can find here:<br>
+[SAS® Viya® Container Recipes](https://github.com/sassoftware/sas-container-recipes)
+
 However the provided recipes don't offer GPU acceleration which is needed or at least recommended if you want to work with deep learning.
 For this reason I decided to share my work of creating GPU accelerated for SAS Viya Programming Only environments.
 
@@ -20,18 +22,20 @@ This repository is privately owned by me. Don't expect any official support for 
 ### Container Setup
 1. Pull this repository
 `git clone https://github.com/Mentos05/SAS_Viya_GPU.git`
+
 2. Go into the repository folder and run docker build command
 `cd SAS_Viya_GPU`
 `docker build .  -t viyaprgonly:gpu`
 
 ### Run Container
 1. Simply use docker run and attach your gpus
+
 `docker run -it --net=host --gpus all viyaprgonly:gpu`
 
 ### Access SAS Studio and Jupyter Lab
 Open one of the following URLs in your browser:
 * SAS Studio: http://localhost/SASStudio/
-* JupyterLab: localhost:8080
+* JupyterLab: http://localhost:8080
 
 Use the following credentials:<br>
 Username = sas<br>
