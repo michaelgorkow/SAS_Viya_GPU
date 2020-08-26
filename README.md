@@ -21,7 +21,9 @@ This repository is privately owned by me. Don't expect any official support for 
 
 ### Container Setup
 1. Pull this repository<br>
-`git clone https://github.com/Mentos05/SAS_Viya_GPU.git`
+```
+git clone https://github.com/Mentos05/SAS_Viya_GPU.git
+```
 2. Go into the repository folder and run docker build command<br>
 ```
 cd SAS_Viya_GPU
@@ -30,8 +32,9 @@ docker build .  -t viyaprgonly:gpu
 
 ### Run Container
 1. Simply use docker run and attach your gpus
-
-`docker run -it --net=host --gpus all viyaprgonly:gpu`
+```
+docker run -it --net=host --gpus all viyaprgonly:gpu
+```
 
 ### Access SAS Studio and Jupyter Lab
 Open one of the following URLs in your browser:
