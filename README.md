@@ -83,7 +83,7 @@ docker run -v folder-on-host:folder-on-container --net=host viyaprgonly:gpu
 While you should notice a significant performance improvement while training/scoring your deep learning models you can also monitor GPU usage by using:
 ```
 watch -n 1 nvidia-smi
-```. 
+```
 nvidia-smi should show a cas-process.
 ![nvidia-smi monitoring](img/nvidia-smi.png "nvidia-smi monitoring")<br>
 Make sure you run this command on your host, not inside the container.
