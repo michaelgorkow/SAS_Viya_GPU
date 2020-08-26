@@ -70,11 +70,21 @@ When building your own container, you can add your own environment.yml files int
 
 ### Share ressources with your container
 If you want to share ressources with your container, e.g. a webcam, you can do so by adapting your docker run command.<br>
-To share devices, use `docker run --device=/dev/video0:/dev/video0 --net=host viyaprgonly:gpu` which will share your webcam (video0)<br>
-To share a folder, e.g. with additional data like models, projects, etc. use `docker run -v folder-on-host:folder-on-container --net=host viyaprgonly:gpu`
+To share devices, e.g. your webcam, use:
+```
+docker run --device=/dev/video0:/dev/video0 --net=host viyaprgonly:gpu
+```
+To share a folder, e.g. with additional data like models, projects, etc. use:
+```
+docker run -v folder-on-host:folder-on-container --net=host viyaprgonly:gpu
+```
 
 ### Verify/Monitor GPU Usage
-While you should notice a significant performance improvement while training/scoring your deep learning models you can also monitor GPU usage by using `watch -n 1 nvidia-smi`. It should show a cas-process.
+While you should notice a significant performance improvement while training/scoring your deep learning models you can also monitor GPU usage by using:
+```
+watch -n 1 nvidia-smi
+```. 
+nvidia-smi should show a cas-process.
 ![nvidia-smi monitoring](img/nvidia-smi.png "nvidia-smi monitoring")<br>
 Make sure you run this command on your host, not inside the container.
 
