@@ -20,11 +20,11 @@ This repository is privately owned by me. Don't expect any official support for 
 * [NVIDIA Docker](https://github.com/NVIDIA/nvidia-docker)
 
 ### Container Setup
-1. Pull this repository
+1. Pull this repository<br>
 `git clone https://github.com/Mentos05/SAS_Viya_GPU.git`
 
-2. Go into the repository folder and run docker build command
-`cd SAS_Viya_GPU`
+2. Go into the repository folder and run docker build command<br>
+`cd SAS_Viya_GPU` <br>
 `docker build .  -t viyaprgonly:gpu`
 
 ### Run Container
