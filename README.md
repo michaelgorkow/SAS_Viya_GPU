@@ -24,8 +24,8 @@ This repository is privately owned by me. Don't expect any official support for 
 `git clone https://github.com/Mentos05/SAS_Viya_GPU.git`
 
 2. Go into the repository folder and run docker build command<br>
-`cd SAS_Viya_GPU` <br>
-`docker build .  -t viyaprgonly:gpu`
+```cd SAS_Viya_GPU
+docker build .  -t viyaprgonly:gpu```
 
 ### Run Container
 1. Simply use docker run and attach your gpus
